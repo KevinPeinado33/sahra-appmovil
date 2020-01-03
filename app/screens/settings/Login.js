@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView, Text, Image } from 'react-native';
 import { Divider } from 'react-native-elements';
+import LoginForm from '../../components/account/LoginForm'
 
-export default function Login({navigation}) {
+export default function Login({ navigation }) {
     return(
         <ScrollView>
             <Image 
@@ -11,7 +12,7 @@ export default function Login({navigation}) {
                 resizeMode="contain"
             />
             <View style={styles.viewContainer}>
-                <Text>Form Login...</Text>
+                <LoginForm />
                 <CreateAccount navigation={navigation}/>
             </View>
             <Divider style={styles.divider} />

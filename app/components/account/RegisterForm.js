@@ -71,7 +71,9 @@ export default function RegisterForm() {
 
 const styles = StyleSheet.create({
     formContainer: {
-        marginTop: 30
+        marginTop: 30,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     inputForm: {
         width: "100%",
